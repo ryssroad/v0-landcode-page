@@ -23,10 +23,26 @@ export function Footer() {
   return (
     <footer className="py-16 px-6 bg-primary text-primary-foreground">
       <div className="max-w-6xl mx-auto">
-        <div className="mb-12">
-          <h3 className="font-serif text-2xl mb-4">{t.footerContacts}</h3>
-          <div className="space-y-2 text-primary-foreground/80">
-            <p>info@landcode.online</p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div>
+            <h3 className="font-serif text-xl mb-4">{t.footerContacts}</h3>
+            <div className="space-y-2 text-primary-foreground/80">
+              <p>info@landcode.online</p>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="font-serif text-xl mb-4">{t.footerPhone}</h3>
+            <div className="space-y-2 text-primary-foreground/80">
+              <p>+7 727 378 40 86</p>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="font-serif text-xl mb-4">{t.footerAddress}</h3>
+            <div className="space-y-2 text-primary-foreground/80">
+              <p>{t.footerAddressText}</p>
+            </div>
           </div>
         </div>
 

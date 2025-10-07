@@ -14,13 +14,14 @@ interface LoginModalProps {
 export function LoginModal({ isOpen, onClose, language }: LoginModalProps) {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
+  const [error, setError] = useState("")
   const t = translations[language]
 
   if (!isOpen) return null
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle login logic here
+    setError(t.loginError)
     console.log("Login attempt:", { email, password })
   }
 
@@ -50,6 +51,8 @@ export function LoginModal({ isOpen, onClose, language }: LoginModalProps) {
         <h2 className="mb-8 font-serif text-3xl font-light text-neutral-900">{t.loginTitle}</h2>
 
         <form onSubmit={handleSubmit} className="space-y-6">
+          {error && <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 text-sm">{error}</div>}
+
           <div>
             <label htmlFor="login-email" className="mb-2 block text-sm font-medium text-neutral-700">
               {t.loginEmail}

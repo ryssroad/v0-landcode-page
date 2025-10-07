@@ -48,10 +48,13 @@ export const translations = {
     loginSubmit: "Войти",
     loginForgot: "Забыли пароль?",
     loginClose: "Закрыть",
+    loginError: "Пользователь не найден",
 
     // Footer
     footerContacts: "Контакты",
-    footerSocial: "Социальные сети",
+    footerPhone: "Телефон",
+    footerAddress: "Адрес",
+    footerAddressText: "улица Карасай батыра, 120б, Алматы",
     footerCopyright: "© 2025 Ландшафтный Код. Все права защищены.",
   },
   en: {
@@ -105,10 +108,13 @@ export const translations = {
     loginSubmit: "Sign In",
     loginForgot: "Forgot password?",
     loginClose: "Close",
+    loginError: "User not found",
 
     // Footer
     footerContacts: "Contacts",
-    footerSocial: "Social Media",
+    footerPhone: "Phone",
+    footerAddress: "Address",
+    footerAddressText: "Karasai Batyr Street, 120b, Almaty",
     footerCopyright: "© 2025 Landscape Code. All rights reserved.",
   },
 }
